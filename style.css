@@ -311,6 +311,12 @@ a {
         height: 250px;
     }
 
+    .issue {
+        top: 10px;
+        right: 10px;
+        font-size: 25px;
+    }
+
     .chessV2 {
         font-size: 18px;
     }
