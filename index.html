@@ -22,58 +22,69 @@
 </head>
 
 <body>
-    <div class="logo">
-        <img src="Assets/images/logoname.png" alt="">
-    </div>
-    <div class="d-flex">
-        <div id="root"></div>
-        <div id="moveLog">
-            <ol></ol>
-        </div>
-    </div>
-
-    <!-- ISSUE -->
-    <div class="issue">
-        <i class="fa-solid fa-circle-exclamation ired"></i>
-    </div>
-    <div class="issuemsg hide">
-        <div class="issuelogo">
+    <main>
+        <div class="logo">
             <img src="Assets/images/logoname.png" alt="">
         </div>
-        <div class="msg">
-            <ol>
-                <li>
-                    <b>Lack of Checkmate Detection</b>
-                    <p>The current implementation does not accurately detect a checkmate scenario, allowing the game to
-                        continue indefinitely after a winning position is achieved.</p>
-                </li>
-                <li>
-                    <b>Lack of Forced Check Defense</b>
-                    <p>After a pawn is promoted, the game does not correctly verify whether the promotion results in a
-                        check or checkmate, affecting the overall gameplay integrity.</p>
-                </li>
-                <li>
-                    <b>Check After Promotion Not Implemented</b>
-                    <p>After a pawn is promoted, the game does not correctly verify whether the promotion results in a
-                        check or checkmate, affecting the overall gameplay integrity.</p>
-                </li>
-                <li>
-                    <b>Incorrect Castling Logic</b>
-                    <p>The current castling logic fails to detect when a square between the king and rook is under
-                        check, allowing castling in scenarios where it should be invalid according to chess rules.</p>
-                </li>
-                <li>
-                    <b>Piece Movement Bug</b>
-                    <p>Intermittent issues with piece movement have been observed, where pieces stop responding or
-                        moving after a certain time during the game. This impacts the fluidity of the game experience.
-                    </p>
-                </li>
-            </ol>
+        <div class="d-flex">
+            <div id="root"></div>
+            <div id="moveLog">
+                <ol></ol>
+            </div>
         </div>
-        <div class="chessV2">
-            Chess.sv Version 2 - <a href="#">Chess-v2</a> <br> (Coming soon...)
+
+        <!-- ISSUE -->
+        <div class="issue">
+            <i class="fa-solid fa-circle-exclamation ired"></i>
         </div>
-    </div>
+        <div class="issuemsg hide">
+            <div class="issuelogo">
+                <img src="Assets/images/logoname.png" alt="">
+            </div>
+            <div class="msg">
+                <ol>
+                    <li>
+                        <b>Lack of Checkmate Detection</b>
+                        <p>The current implementation does not accurately detect a checkmate scenario, allowing the game
+                            to
+                            continue indefinitely after a winning position is achieved.</p>
+                    </li>
+                    <li>
+                        <b>Lack of Forced Check Defense</b>
+                        <p>After a pawn is promoted, the game does not correctly verify whether the promotion results in
+                            a
+                            check or checkmate, affecting the overall gameplay integrity.</p>
+                    </li>
+                    <li>
+                        <b>Check After Promotion Not Implemented</b>
+                        <p>After a pawn is promoted, the game does not correctly verify whether the promotion results in
+                            a
+                            check or checkmate, affecting the overall gameplay integrity.</p>
+                    </li>
+                    <li>
+                        <b>Incorrect Castling Logic</b>
+                        <p>The current castling logic fails to detect when a square between the king and rook is under
+                            check, allowing castling in scenarios where it should be invalid according to chess rules.
+                        </p>
+                    </li>
+                    <li>
+                        <b>Piece Movement Bug</b>
+                        <p>Intermittent issues with piece movement have been observed, where pieces stop responding or
+                            moving after a certain time during the game. This impacts the fluidity of the game
+                            experience.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+            <div class="chessV2">
+                Chess.sv Version 2 - <a href="#">Chess-v2</a> <br> (Coming soon...)
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Created by <a href="https://saumyajeet-varma.github.io/Portfolio/" target="_blank">Saumyajeet Varma</a>
+    </footer>
 
     <!-- Links to connect JS files -->
     <script type="module" src="script.js"></script>
