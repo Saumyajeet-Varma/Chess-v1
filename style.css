@@ -9,6 +9,7 @@ body {
     background-color: #302E2B;
     overflow-x: hidden;
     height: 100vh;
+    width: 100vw;
     overflow-y: scroll;
 }
 
