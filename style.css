@@ -1,0 +1,314 @@
+/* ---------- MONTSERRAT FONT ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #302E2B;
+    overflow-x: hidden;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+.logo img {
+    height: 155px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    gap: 0.75vw;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.squareRow {
+    display: flex;
+}
+
+.square {
+    height: 65px;
+    width: 65px;
+    position: relative;
+    overflow: hidden;
+}
+
+.white {
+    background-color: #EBECD0;
+}
+
+.black {
+    background-color: #739552;
+}
+
+.img-size {
+    width: 100%;
+    cursor: pointer;
+}
+
+.whiteyellow {
+    background: #f7f769;
+}
+
+.blackyellow {
+    background: #B9CA43;
+}
+
+.highlight {
+    height: 33%;
+    width: 33%;
+    border-radius: 50%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.15);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.capturecolor {
+    background: #ee4b2b;
+}
+
+.rankId {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.fileId {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.whiteColorLabel {
+    color: #739552;
+}
+
+.blackColorLabel {
+    color: #EBECD0;
+}
+
+#moveLog {
+    width: 350px;
+    height: 520px;
+    background: #262522;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#moveLog ol {
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+#moveLog ol li span {
+    display: inline-block;
+    width: 20px;
+    margin: auto 45px auto 20px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    width: 600px;
+    height: 600px;
+}
+
+.modal p {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.modal div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal div img {
+    width: 100px;
+    cursor: pointer;
+    margin: auto 10px;
+    transition: transform ease 0.2s;
+}
+
+.modal div img:hover {
+    transform: scale(1.1);
+}
+
+.check {
+    background-color: #c20000;
+}
+
+/* ---------- ISSUE ---------- */
+.issue {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.issuemsg {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    background: #121212;
+    transition: left ease-in 0.4s;
+}
+
+.issuelogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+.issuelogo img {
+    height: 155px;
+}
+
+.msg {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    width: 80%;
+    margin: 50px auto;
+    overflow: scroll;
+    background: #262522;
+    padding-right: 10px;
+    max-height: 400px;
+    overflow-x: hidden;
+}
+
+.show {
+    left: 0;
+}
+
+.hide {
+    left: 120%;
+}
+
+.ired {
+    color: red;
+}
+
+.iwhite {
+    color: white;
+}
+
+.chessV2 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #6C9D41;
+}
+
+/* ---------- SCROLLBAR ---------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #010101;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6C9D41;
+    border-radius: 5px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width: 900px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #moveLog {
+        width: 520px;
+        height: 400px;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .logo img,
+    .issuelogo img {
+        height: 100px;
+    }
+
+    .issue {
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+    }
+
+    .square {
+        height: 45px;
+        width: 45px;
+    }
+
+    #moveLog {
+        width: 360px;
+        height: 300px;
+    }
+
+    .msg {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 385px) {
+    .square {
+        height: 35px;
+        width: 35px;
+    }
+
+    #moveLog {
+        width: 280px;
+        height: 250px;
+    }
+
+    .chessV2 {
+        font-size: 18px;
+    }
+}
